@@ -1,0 +1,119 @@
+/**
+ * Variables
+ */
+
+$main-bg: #fcfcfc;
+$border-color: #dfdfdf;
+$orange: #c66107;
+
+/**
+ * General elements
+ */
+
+@import url(figure.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: $main-bg;
+  color: #333;
+  font-family: arial, sans-serif;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+
+/**
+ * Layout of the main page elements 
+ */
+
+ .layout-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 960px;
+ }
+
+.header-container {
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+
+    background: $main-bg;
+    border-bottom: 1px solid $border-color;
+
+    .header-content {
+        @extend .layout-container;
+        text-align: center;
+
+        .sitelogo {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .main-nav {
+        position: relative;
+        top: 1px;
+        margin: 40px 0 0 0;
+    }
+}
+
+.main-container {
+    background: white;
+
+    .main-content {
+        @extend .layout-container;
+        padding: 10px 0 30px 0;
+
+        h1, 
+        h2 {
+            padding-bottom: 10px;
+            border-bottom: 1px solid $border-color;
+        }
+
+        p {
+            line-height: 1.5em;
+            color: #666;
+        }
+    }
+}
+
+.footer-container {
+    background: $main-bg;
+    border-top: 1px solid $border-color;
+
+    .footer-content {
+        @extend .layout-container;
+        padding: 20px 0;
+
+        font-size: 12px;
+        color: #888;
+    }
+}
+
+/**
+ * For articles
+ */
+.article1 { }
+
+.byline {
+    margin: 40px 0 0 0;
+    padding-top: 20px;
+
+    border-top: 1px dashed #ccc;
+
+    p {
+        margin: 0;
+
+        font-size: 14px;
+        color: #888;
+    }
+}
